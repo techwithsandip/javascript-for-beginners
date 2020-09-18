@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic operators in JavaScript</title>
+    <script>
+        // Arithmetic operators
+        // + - * /
+
+        var num1 = 5, num2 = 4, output;
+
+        output = num1 + num2;
+        console.log('Addition-', output);
+
+        output = num1 - num2;
+        console.log('Subtraction-', output);
+
+        output = num1 * num2;
+        console.log('Multiplication-', output);
+
+        output = num1 / num2;
+        console.log('Division-', output);
+
+        output = num1 % num2;
+        console.log('Modulus-', output);
+
+        // operator precedence
+        // multiplication division
+        // addition subtraction
+        var output = (5 + 4) * 3 / 5 + 2;
+        // 4*3=12
+        // 12/5=2.4
+        // 5+2.4=7.4
+        // 7.4+2=9.4
+        console.log(output);
+
+        // shorthand maths
+        var num3 = 5;
+        //num3 = num3 + 10;
+        num3 += 10;
+        num3 -= 2;
+        num3 *= 10;
+        num3 /= 3;
+
+        // Unary operators
+        // ++ --
+        /*var i = 1;
+        i++;
+        console.log(i);
+        i--;
+        console.log(i);*/
+
+        var i = 1;
+        //console.log(i++);
+        console.log(i++);
+        // console.log(i);
+        // i = i + 1
+        // console.log(++i);
+        // i = i + 1
+        // console.log(i)
+        
+    </script>
+</head>
+<body>
+    <h1>Arithmetic operators in JavaScript</h1>
+</body>
+</html>
