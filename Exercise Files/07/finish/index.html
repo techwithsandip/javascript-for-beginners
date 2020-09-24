@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conditional statements & Logic</title>
+        <script>
+            // IF-ELSE
+            var isRaining = false;
+            if (isRaining) {
+                // statements
+                console.log('Please carry umbrella');
+            } else {
+                console.log('Its sunny day');
+            }
+
+            var isProductAvailable = true;
+            if (isProductAvailable) {
+                console.log('Yes, you can buy');
+            } else {
+                console.log('Product is out of stock');
+            }
+
+            // logical operators
+            // equality
+            var username = "John";
+            
+            if (username == "John") {
+                console.log('You are welcome');
+            } else {
+                console.log('Something went wrong');
+            }
+
+            // not equal
+            var password = "welcome1234";
+            
+            if (password != "welcome123") {
+                console.log('Password is wrong');
+            } else {
+                console.log('You are welcome');
+            }
+
+            // comparison operators
+            var age = 18;
+            if (age >= 18) {
+                console.log('You can vote');
+            } else {
+                console.log('You need to wait');
+            }
+
+            age = 19;
+            if (age <= 18) {
+                console.log('Drink juice');
+            } else {
+                console.log('You can drink beer');
+            }
+
+            // advance conditional logic
+            // && ||
+            // TRUE && TRUE = TRUE
+            // TRUE && FALSE = FALSE
+            // FALSE && TRUE = FALSE
+            // FALSE && FALSE = FALSE
+            // TRUE || TRUE = TRUE
+            // TRUE || FALSE = TRUE
+            // FALSE || TRUE = TRUE
+            // FALSE || FALSE = FALSE
+
+            var name = "John";
+            var time = 12;
+            var isHungry = true;
+
+            if (time < 9) {
+                console.log('John is in gym');
+            } else if (time > 9 && time < 12) {
+                console.log('John is in office');
+            } else if (time > 12 || isHungry) {
+                console.log('John is at pantry');
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Conditional statements & Logic</h1>
+    </body>
+</html>
