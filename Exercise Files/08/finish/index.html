@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ternary operator and switch statement</title>
+        <script>
+            // if - else example
+            var age = 14;
+            var canDrive;
+
+            if (age > 15) {
+                canDrive = 'Yes';
+            } else {
+                canDrive = 'No';
+            }
+
+            //console.log(canDrive);
+
+            // ternary operators
+            canDrive = age > 15 ? 'Yes' : 'No';
+
+            //console.log(canDrive);
+
+            // switch statement
+            var product = 'Banana';
+
+            switch (product) {
+                case 'orange':
+                    console.log('Oranges are for Rs 60');
+                    break;
+                case 'banana':
+                case 'Banana':
+                    console.log('Bananas are for Rs 40'); 
+                    break;
+                case 'papaya':
+                    console.log('Papayas are for Rs 120');
+                    break;
+                default:
+                    console.log('Product not available');
+
+            }   
+
+            /*var name = "John";
+            var time = 12;
+            var isHungry = true;
+
+            if (time < 9) {
+                console.log("John is at the gym");
+            } else if (time > 9 && time < 12) {
+                console.log("John is on office");
+            } else if ((time > 12 && time < 13) || isHungry) {
+                console.log("John is at food court");
+            }*/
+
+            var name = "John";
+            var time = 8;
+            var isHungry = false;
+
+            switch (true) {
+                case time < 9:
+                    console.log("John is at the gym");
+                    break;
+                case time > 9 && time < 12:
+                    console.log("John is on office");
+                    break;
+                case time > 12 || isHungry:
+                    console.log("John is at food court");
+                    break;
+                default: 
+                    console.log("John is at home");
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Ternary operator and switch statement</h1>
+    </body>
+</html>

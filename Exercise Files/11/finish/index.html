@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Arguments</title>
+        <script>
+            
+            // create a function
+            /*function greeter() {
+                console.log('Hello Sandip');
+            }
+
+            // call a function
+            greeter();
+            greeter();*/
+
+            function greeter(name, lang) {
+                if (lang === 'english') {
+                    console.log('Hello ' + name);
+                } else if (lang === 'hindi') {
+                    console.log('Namaste ', name);
+                }
+            }
+
+            greeter('Sandip', 'hindi');
+            greeter('John', 'english');
+            greeter('Priya', 'hindi');
+
+            function toCelsius(input) {
+                // (32°F − 32) × 5/9 
+                var output = (input - 32) * 5 / 9;
+                console.log('Celsius value: ', output);
+            }
+
+            toCelsius(100);
+
+            function search(product) {
+
+            }
+
+            function filter(params) {
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Function Arguments</h1>
+    </body>
+</html>
